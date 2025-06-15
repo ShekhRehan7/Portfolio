@@ -28,6 +28,7 @@ import postmanLogo from './assets/tech_logo/postman.png';
 
 import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
+import mcLogo from './assets/tech_logo/mc.png';
 
 
 // Experience Section Logo's
@@ -43,9 +44,9 @@ import mrrsLogo from './assets/education_logo/mrrs.png';
 import githubdetLogo from './assets/work_logo/password.png';
 import Ecommerce from './assets/work_logo/Ecommerce.png';
 import movierecLogo from './assets/work_logo/movie_rec.png';
-import taskremLogo from './assets/work_logo/task_rem.png';
+import socialApp from './assets/work_logo/socialApp.png';
 import food_order from './assets/work_logo/food_order.png';
-import webverLogo from './assets/work_logo/web_dig.png';
+
 
 
 export const SkillsInfo = [
@@ -90,6 +91,7 @@ export const SkillsInfo = [
       { name: 'Postman', logo: postmanLogo },
       { name: 'Vercel', logo: vercelLogo },
       { name: 'Netlify', logo: netlifyLogo },
+      { name: 'Atlas', logo: mcLogo },
     ],
   },
 ];
@@ -108,10 +110,17 @@ export const SkillsInfo = [
         "JavaScript",
         "React JS",
         "Node JS",
+        "JWT",
+        "API",
         "Express JS",
         "Tailwind CSS",
         "MongoDb",
         "Redux",
+        "Git",
+        "GitHub",
+        "Vercel",
+        "Render",
+        "Atlas"
       ],
     },
 
@@ -151,6 +160,16 @@ export const SkillsInfo = [
   export const projects = [
     {
       id: 0,
+      title: "Social Media Website",
+      description:
+        "A modern social media app built using HTML, CSS, JavaScript, React JS, Redux, Tailwind CSS, JWT, API, Node JS, Express JS, MongoDB, and Socket.io. It features real-time chat, secure authentication, post sharing, and a fully responsive UI. The frontend is developed with React and Tailwind, while the backend uses Node.js, Express, and MongoDB.",
+      image:socialApp,
+      tags: ["HTML", "CSS", "JavaScript" ,"React JS","Redux","Tailwind CSS","JWT","API","Node JS","Express JS","MongoDB","Socket",],
+      github: "https://github.com/ShekhRehan7/Social_Media",
+      webapp: "https://social-media-rouge-three.vercel.app/login",
+    },
+    {
+      id: 1,
       title: "Random Password Generator",
       description:
         "Random Password Generator is a secure and easy-to-use web app for creating strong, customizable passwords. Users can select length, include letters, numbers, and symbols, then generate and copy passwords instantly. It requires no login and offers a clean, mobile-friendly interface for quick and safe password creation.",
@@ -160,7 +179,7 @@ export const SkillsInfo = [
       webapp: "https://random-password-generator-sigma-blue.vercel.app/",
     },
     {
-      id: 1,
+      id: 2,
       title: "Ecommerce",
       description:
         "RedStore is a fully front-end eCommerce demo website built without any backend or database.It includes pages like Login, Register, Home, Products, Cart, and Payment, all functioning using local storage only.The project showcases a complete shopping flow UI for learning or demonstration purposes without real data handling.",
@@ -170,7 +189,7 @@ export const SkillsInfo = [
       webapp: "https://red-store-ecommerce-website-zeta.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Movie Recommendation Frontend",
       description:
         "This is a front-end movie website built using HTML, CSS, and JavaScript. It showcases movie posters, details, and a responsive user interface. The site is purely static and does not include any backend or database.",
@@ -180,7 +199,7 @@ export const SkillsInfo = [
       webapp: "https://movie-website-frontend-kappa.vercel.app/"
     },
     {
-      id: 3,
+      id: 4,
       title: "Food Order",
       description:
         "This is a front-end food ordering website built using React and Tailwind CSS. The homepage fetches and displays dish data from an API in a clean, responsive layout. Users can browse the menu and navigate to a static order page—no backend or database is connected.",
